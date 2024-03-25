@@ -1,4 +1,4 @@
-# Tic-Tac-Toe Front End Engineer Tech Test
+# Sedex Connect - Tic-Tac-Toe Front End Engineer Tech Test
 
 ## The task
 
