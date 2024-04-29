@@ -8,24 +8,25 @@ We have a partial implementation of a tic-tac-toe game. You'll pair with Sedex e
 
 You **don't** have to complete the whole exercise, just make steady progress.
 
-Focus on quality over speed. We're looking for your problem-solving approach and front-end development skills. 
+Focus on quality over speed. We're looking for your problem-solving approach and front-end development skills.
 
 Treat this like a real-life pairing - feel free to ask questions, bounce ideas, look up stuff on the Internet etc.
 
-
 ## What we're looking for
 
- 1. Overall front-end development skills
- 2. Testing
- 3. Code architecture
- 4. Refactoring and cleanup
+1.  Effective communication in a pairing session
+2.  Making small changes in a safe manner
+3.  Overall front-end development skills
+4.  Testing
+5.  Code architecture
+6.  Refactoring and cleanup
 
 ## Functional requirements
 
- - Create a functioning Tic Tac Toe game where players alternate placing X's and O's on the board. 
- - Implement win detection for diagonal, horizontal, and vertical rows. 
- - Display a winning message if a player wins; otherwise, keep the game ongoing. 
- - Include a reset function to clear the board.
+- Create a functioning Tic Tac Toe game where players alternate placing X's and O's on the board.
+- Implement win detection for diagonal, horizontal, and vertical rows.
+- Display a winning message if a player wins; otherwise, keep the game ongoing.
+- Include a reset function to clear the board.
 
 ## Currently missing Features
 
