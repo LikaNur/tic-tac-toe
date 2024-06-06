@@ -1,0 +1,20 @@
+image: sedexconnect/continuous-integration:latest
+
+options:
+  max-time: 30
+  size: 2x
+
+definitions:
+  steps:
+    - step: &fossa
+        name: "Run FOSSA analysis"
+        script:
+            - scripts/fossa.sh
+
+pipelines:
+  default:
+    - step: *fossa
+
+  branches:
+    main:
+    - step: *fossa
