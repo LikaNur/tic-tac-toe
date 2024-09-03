@@ -2,7 +2,7 @@
 
 ## The task
 
-We have a partial implementation of a tic-tac-toe game. You'll pair with Sedex engineers to complete this.
+We have a partial implementation of a [tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe) game. You'll pair with Sedex engineers to complete this.
 
 ## How to approach the task
 
@@ -10,7 +10,7 @@ You **don't** have to complete the whole exercise, just make steady progress.
 
 Focus on quality over speed. We're looking for your problem-solving approach and front-end development skills.
 
-Treat this like a real-life pairing - feel free to ask questions, bounce ideas, look up stuff on the Internet etc.
+Treat this like real-life pairing. Feel free to ask questions, bounce ideas, look up stuff on the internet etc.
 
 ## What we're looking for
 
@@ -23,7 +23,7 @@ Treat this like a real-life pairing - feel free to ask questions, bounce ideas, 
 
 ## Functional requirements
 
-- Create a functioning Tic Tac Toe game where players alternate placing X's and O's on the board.
+- Create a functioning Tic-Tac-Toe game where players alternate placing Xs and Os on the board.
 - Implement win detection for diagonal, horizontal, and vertical rows.
 - Display a winning message if a player wins; otherwise, keep the game ongoing.
 - Include a reset function to clear the board.
@@ -40,4 +40,11 @@ Implement the following missing functionalities:
 
 ## Fixing bugs or code smells
 
-If you encounter any bugs, inconsistencies, or areas for improvement -- fix them as you go along.
+If you encounter any bugs, inconsistencies or areas for improvement, please fix them as you go along.
+
+
+## Getting started
+
+* Install dependencies with `npm install`
+* Start the app with `npm run dev`
+* Run tests with `npm test`

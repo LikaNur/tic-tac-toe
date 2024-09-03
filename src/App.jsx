@@ -62,7 +62,7 @@ const Board = ({
   winner,
   gameOver,
   handleSquareClick,
-  handleRest,
+  handleReset,
 }) => {
   return (
     <div style={containerStyle} className="gameBoard">
@@ -80,7 +80,7 @@ const Board = ({
               : ""}
         </span>
       </div>
-      <button style={buttonStyle} onClick={handleRest}>
+      <button style={buttonStyle} onClick={handleReset}>
         Reset
       </button>
       <div style={boardStyle}>
@@ -124,6 +124,7 @@ const App = () => {
   let squareClicked = () => {};
 
   let resetGame = () => {};
+
   return (
     <div className="game">
       <div className="game-board">
@@ -133,7 +134,7 @@ const App = () => {
           winner={getWinner()}
           gameOver={isGameOver}
           handleSquareClick={squareClicked}
-          handleRest={resetGame}
+          handleReset={resetGame}
         />
       </div>
     </div>
