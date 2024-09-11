@@ -9,10 +9,10 @@ if [ -z "$FOSSA_API_KEY" ]; then
 fi
 
 # Check if fossa is installed, if not install it
-if ! command -v fossa &> /dev/null; then
-  curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
-  export PATH=$PATH:/usr/local/bin
-fi
+# if ! command -v fossa &> /dev/null; then
+#   curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install-latest.sh | bash
+#   export PATH=$PATH:/usr/local/bin
+# fi
 
 # Verify the current directory and the fossa.yml file
 echo "Current directory: $(pwd)"
