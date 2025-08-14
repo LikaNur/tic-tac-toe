@@ -12,11 +12,9 @@ const App = () => {
   const [isXnext, setIsXnext] = useState(initialState.isXnext);
 
   let getWinner = () => {
-    for (let i = 0; i < winningCombinations.length; i++) {
-      const [a, b, c] = winningCombinations[i];
-      if (board[a] && board[a] === board[b] && board[b] === board[c]) {
+    for (const [a, b, c] of winningCombinations) {
+      if (board[a] && board[a] === board[b] && board[b] === board[c])
         return board[a];
-      }
     }
     return null;
   };
