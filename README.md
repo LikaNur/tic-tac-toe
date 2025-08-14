@@ -42,9 +42,8 @@ Implement the following missing functionalities:
 
 If you encounter any bugs, inconsistencies or areas for improvement, please fix them as you go along.
 
-
 ## Getting started
 
-* Install dependencies with `npm install`
-* Start the app with `npm run dev`
-* Run tests with `npm test`
+- Install dependencies with `npm install`
+- Start the app with `npm run dev`
+- Run tests with `npm test`

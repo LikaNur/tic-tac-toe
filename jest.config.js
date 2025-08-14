@@ -1,9 +1,9 @@
 module.exports = {
-  testEnvironment: "jsdom",
+  testEnvironment: 'jsdom',
   moduleNameMapper: {
-    "\\.(css|less|scss|sass)$": "identity-obj-proxy",
+    '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
   },
   transform: {
-    "^.+\\.jsx?$": "babel-jest", // Transform JavaScript files with JSX syntax using Babel
+    '^.+\\.jsx?$': 'babel-jest', // Transform JavaScript files with JSX syntax using Babel
   },
 };
