@@ -17,15 +17,16 @@ export const Board = ({
 }) => {
   return (
     <div style={containerStyle} role='grid' className='gameBoard'>
-      <div id='statusArea' className='status' style={instructionsStyle}>
+      <h1 id='statusArea' className='status' style={instructionsStyle}>
         {statusMessage(winner, isGameOver, isXnext)}
-      </div>
+      </h1>
       <button type='reset' style={buttonStyle} onClick={handleReset}>
         Reset
       </button>
       <div style={boardStyle}>
         {board.map((playerMark, idx) => (
           <Square
+            ariaLabel={`square-${idx}`}
             key={idx}
             isGameOver={isGameOver}
             playerMark={playerMark}
