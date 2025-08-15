@@ -18,7 +18,7 @@ export const Board = ({
   return (
     <div style={containerStyle} role='grid' className='gameBoard'>
       <h1 id='statusArea' className='status' style={instructionsStyle}>
-        {getStatusMessage(winner, isDraw, isXnext)}
+        {getStatusMessage({ winner, isDraw, isXnext })}
       </h1>
       <button type='reset' style={buttonStyle} onClick={handleReset}>
         Reset
