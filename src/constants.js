@@ -9,9 +9,3 @@ export const winningCombinations = [
   [2, 4, 6],
 ];
 
-export const getStatusMessage = (winner, isGameOver, isXnext) =>
-  winner
-    ? `Winner: ${winner}`
-    : isGameOver
-    ? 'Draw'
-    : `Next Player: ${isXnext ? 'X' : 'O'}`;

@@ -1,4 +1,3 @@
-import { getStatusMessage } from '../constants';
 import { Square } from './Square';
 import {
   containerStyle,
@@ -6,19 +5,20 @@ import {
   instructionsStyle,
   buttonStyle,
 } from '../styles';
+import { getStatusMessage } from '../gameLogic/getStatusMessage';
 
 export const Board = ({
   board,
   isXnext,
   winner,
-  isGameOver,
+  isDraw,
   handleSquareClick,
   handleReset,
 }) => {
   return (
     <div style={containerStyle} role='grid' className='gameBoard'>
       <h1 id='statusArea' className='status' style={instructionsStyle}>
-        {getStatusMessage(winner, isGameOver, isXnext)}
+        {getStatusMessage(winner, isDraw, isXnext)}
       </h1>
       <button type='reset' style={buttonStyle} onClick={handleReset}>
         Reset
@@ -28,7 +28,7 @@ export const Board = ({
           <Square
             ariaLabel={`square-${idx}`}
             key={idx}
-            disabled={isGameOver}
+            disabled={isDraw}
             playerMark={playerMark}
             onClick={() => handleSquareClick(idx)}
           />

@@ -1,18 +1,10 @@
 import { useState } from 'react';
-import { winningCombinations } from './constants';
 import { Board } from './components/Board';
+import { getWinner } from './gameLogic/getWinner';
 
 let initialState = {
   board: Array(9).fill(null),
   isXnext: true,
-};
-
-export const getWinner = board => {
-  for (const [a, b, c] of winningCombinations) {
-    if (board[a] && board[a] === board[b] && board[b] === board[c])
-      return board[a];
-  }
-  return null;
 };
 
 const App = () => {
@@ -21,7 +13,7 @@ const App = () => {
 
   const winner = getWinner(board);
   const isFull = board.every(Boolean);
-  const isGameOver = Boolean(winner) || isFull;
+  const isDraw = Boolean(winner) || isFull;
 
   let squareClicked = idx => {
     const updated = board.map((square, squareIdx) => {
@@ -47,7 +39,7 @@ const App = () => {
           board={board}
           isXnext={isXnext}
           winner={winner}
-          isGameOver={isGameOver}
+          isDraw={isDraw}
           handleSquareClick={squareClicked}
           handleReset={resetGame}
         />
