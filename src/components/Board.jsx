@@ -1,4 +1,4 @@
-import { statusMessage } from '../constants';
+import { getStatusMessage } from '../constants';
 import { Square } from './Square';
 import {
   containerStyle,
@@ -18,7 +18,7 @@ export const Board = ({
   return (
     <div style={containerStyle} role='grid' className='gameBoard'>
       <h1 id='statusArea' className='status' style={instructionsStyle}>
-        {statusMessage(winner, isGameOver, isXnext)}
+        {getStatusMessage(winner, isGameOver, isXnext)}
       </h1>
       <button type='reset' style={buttonStyle} onClick={handleReset}>
         Reset
@@ -30,7 +30,7 @@ export const Board = ({
             key={idx}
             disabled={isGameOver}
             playerMark={playerMark}
-            handleSquareClick={() => handleSquareClick(idx)}
+            onClick={() => handleSquareClick(idx)}
           />
         ))}
       </div>

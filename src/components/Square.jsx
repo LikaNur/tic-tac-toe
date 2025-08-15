@@ -1,11 +1,6 @@
 import { squareStyle } from '../styles';
 
-export const Square = ({
-  playerMark,
-  disabled,
-  handleSquareClick,
-  ariaLabel,
-}) => {
+export const Square = ({ playerMark, disabled, onClick, ariaLabel }) => {
   return (
     <button
       type='button'
@@ -13,7 +8,7 @@ export const Square = ({
       data-testid='square'
       aria-label={ariaLabel}
       style={squareStyle}
-      onClick={handleSquareClick}
+      onClick={onClick}
       disabled={disabled || playerMark !== null}
     >
       {playerMark}
