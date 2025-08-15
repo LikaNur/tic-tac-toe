@@ -2,7 +2,7 @@ import { squareStyle } from '../styles';
 
 export const Square = ({
   playerMark,
-  isGameOver,
+  disabled,
   handleSquareClick,
   ariaLabel,
 }) => {
@@ -14,7 +14,7 @@ export const Square = ({
       aria-label={ariaLabel}
       style={squareStyle}
       onClick={handleSquareClick}
-      disabled={isGameOver}
+      disabled={disabled || playerMark !== null}
     >
       {playerMark}
     </button>

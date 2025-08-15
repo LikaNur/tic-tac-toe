@@ -28,7 +28,7 @@ export const Board = ({
           <Square
             ariaLabel={`square-${idx}`}
             key={idx}
-            isGameOver={isGameOver}
+            disabled={isGameOver}
             playerMark={playerMark}
             handleSquareClick={() => handleSquareClick(idx)}
           />
